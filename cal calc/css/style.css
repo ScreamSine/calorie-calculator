@@ -1,0 +1,23 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(206, 206, 206);
+    border-collapse: collapse;
+}
+
+.container {
+    border-radius: 15px;
+    width: 400px;
+    height: 620px;
+    background-color: #ffffff;
+}
+
+.header,
+.main,
+.footer {
+    border: 1px solid black;
+}
+
+table {
+    border: 1px solid black;
+}
