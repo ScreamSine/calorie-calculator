@@ -5,42 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Calories calculator</title>
   </head>
+  <h1>Счётчик калорий</h1>
   <body>
     <div class="container">
       <div class="header">
         <h2>Пол</h2>
-        <table>
-          <th>Мужчина</th>
-          <th>Женщина</th>
+        <table class="inpButTable">
+          <th class="inpBut">Мужчина</th>
+          <th class="inpBut">Женщина</th>
         </table>
+        <hr />
         <table>
-          <tr>
-            <th>Возраст</th>
-            <th>Рост</th>
-            <th>Вес</th>
-          </tr>
-          <tr>
-            <td>лет</td>
-            <td>см</td>
-            <td>кг</td>
-          </tr>
-          <tr>
-            <td><input type="text" value="0" /></td>
-            <td><input type="text" value="0" /></td>
-            <td><input type="text" value="0" /></td>
+          <tr class="options">
+            <th>Возраст <span class="value">лет</span></th>
+            <th>Рост <span class="value">см</span></th>
+            <th>Вес <span class="value">кг</span></th>
           </tr>
         </table>
+        <div class="data">
+          <input type="number" value="" / class="data entervalue">
+          <input type="number" value="" class="data entervalue" />
+          <input type="number" value="" class="data entervalue" />
+        </div>
+        <hr />
       </div>
       <div class="main">
-        <h2>Возраст</h2>
         <h2>Физическая автивность</h2>
+        <table>
+          <tr>
+            <td rowspan="2" class="choice">
+              <input type="radio" class="radioButton" />
+            </td>
+            <td>Минимальная</td>
+          </tr>
+          <tr>
+            <td class="clarification">Два раза в год</td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="choice">
+              <input type="radio" class="radioButton" />
+            </td>
+            <td>Низкая</td>
+          </tr>
+          <tr>
+            <td class="clarification">Три раза в год</td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="choice">
+              <input type="radio" class="radioButton" />
+            </td>
+            <td>Средняя</td>
+          </tr>
+          <tr class="clarification">
+            <td>Постольоку-поскольу</td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="choice">
+              <input type="radio" class="radioButton" />
+            </td>
+            <td>Высокая</td>
+          </tr>
+          <tr>
+            <td class="clarification">Спортпит</td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="choice">
+              <input type="radio" class="radioButton" />
+            </td>
+            <td>Очень высокая</td>
+          </tr>
+          <tr>
+            <td class="clarification">Инста самка</td>
+          </tr>
+        </table>
+        <hr />
       </div>
       <div class="footer">
-        <input type="submit" value="Рассчитать" />
-        <input type="submit" value="Очистить поле ввода" />
+        <input type="submit" value="Рассчитать" class="calculate" />
+        <input type="submit" value="Очистить поле ввода" class="allClear" />
       </div>
+      <hr />
+      <p class="testing"></p>
+    </div>
+    <div class="resultCalc">
+      <h2>Ваша норма калорий:</h2>
+      <p>Результат с пояснением</p>
     </div>
     <script src="script/script.js"></script>
   </body>
